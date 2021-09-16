@@ -1,0 +1,319 @@
+paragraphId	sentenceID	tokenId	beginOffset	endOffset	whitespaceAfter	headTokenId	originalWord	normalizedWord	lemma	pos	ner	deprel	inQuotation	characterId	supersense
+0	0	0	0	4	S	4	from	from	from	IN	O	prep	O	-1	O
+0	0	1	5	11		0	Sterne	Sterne	Sterne	NNP	PERSON	pobj	O	-1	B-noun.person
+0	0	2	11	12	S	4	,	,	,	,	O	punct	O	-1	O
+0	0	3	13	16	S	4	are	are	be	VBP	O	auxpass	O	-1	O
+0	0	4	17	26	S	-1	eulogized	eulogized	eulogize	VBN	O	null	O	-1	B-verb.communication
+0	0	5	27	29	S	4	by	by	by	IN	O	prep	O	-1	O
+0	0	6	30	31	S	8	a	a	a	DT	O	det	O	-1	O
+0	0	7	32	40	N	8	thousand	thousand	thousand	CD	NUMBER	num	O	-1	O
+0	0	8	41	45		5	pens	pens	pen	NNS	O	pobj	O	-1	B-noun.artifact
+0	0	9	45	46		4	—	—	—	:	O	punct	O	-1	O
+0	0	10	46	51	S	15	there	there	there	RB	O	nsubj	O	-1	O
+0	0	11	52	57	S	15	seems	seems	seem	VBZ	O	cop	O	-1	B-verb.perception
+0	0	12	58	64	S	15	almost	almost	almost	RB	O	advmod	O	-1	O
+0	0	13	65	66	S	15	a	a	a	DT	O	det	O	-1	O
+0	0	14	67	74	S	15	general	general	general	JJ	TITLE	amod	O	-1	O
+0	0	15	75	79	S	4	wish	wish	wish	NN	O	parataxis	O	-1	B-noun.cognition
+0	0	16	80	82	S	15	of	of	of	IN	O	prep	O	-1	O
+0	0	17	83	91	S	16	decrying	decrying	decry	VBG	O	pcomp	O	-1	B-verb.communication
+0	0	18	92	95	S	19	the	the	the	DT	O	det	O	-1	O
+0	0	19	96	104	S	17	capacity	capacity	capacity	NN	O	dobj	O	-1	B-noun.attribute
+0	0	20	105	108	N	19	and	and	and	CC	O	cc	O	-1	O
+0	0	21	109	121	S	19	undervaluing	undervaluing	undervaluing	NN	O	conj	O	-1	B-noun.person
+0	0	22	122	125	S	23	the	the	the	DT	O	det	O	-1	O
+0	0	23	126	132	S	19	labour	labour	labour	NN	O	dep	O	-1	B-noun.group
+0	0	24	133	135	S	23	of	of	of	IN	O	prep	O	-1	O
+0	0	25	136	139	S	26	the	the	the	DT	O	det	O	-1	O
+0	0	26	140	148		24	novelist	novelist	novelist	NN	TITLE	pobj	O	-1	B-noun.person
+0	0	27	148	149	S	15	,	,	,	,	O	punct	O	-1	O
+0	0	28	150	153	S	15	and	and	and	CC	O	cc	O	-1	O
+0	0	29	154	156	S	15	of	of	of	IN	O	conj	O	-1	O
+0	0	30	157	166	S	29	slighting	slighting	slight	VBG	O	pcomp	O	-1	B-verb.cognition
+0	0	31	167	170	N	32	the	the	the	DT	O	det	O	-1	O
+0	0	32	171	183	S	30	performances	performances	performance	NNS	O	dobj	O	-1	B-noun.communication
+0	0	33	184	189	S	34	which	which	which	WDT	O	nsubj	O	-1	O
+0	0	34	190	194	S	32	have	have	have	VBP	O	rcmod	O	-1	O
+0	0	35	195	199	S	36	only	only	only	RB	O	advmod	O	-1	O
+0	0	36	200	206		34	genius	genius	genius	NN	O	dobj	O	-1	B-noun.person
+0	0	37	206	207	S	36	,	,	,	,	O	punct	O	-1	O
+0	0	38	208	211		36	wit	wit	wit	NN	O	conj	O	-1	B-noun.communication
+0	0	39	211	212	S	36	,	,	,	,	O	punct	O	-1	O
+0	0	40	213	216	S	36	and	and	and	CC	O	cc	O	-1	O
+0	0	41	217	222	S	36	taste	taste	taste	NN	O	conj	O	-1	B-noun.cognition
+0	0	42	223	225	S	43	to	to	to	IN	O	mark	O	-1	O
+0	0	43	226	235	S	34	recommend	recommend	recommend	VB	O	advcl	O	-1	B-verb.communication
+0	0	44	236	240		43	them	them	they	PRP	O	dobj	O	-1	O
+0	0	45	240	241	N	4	.	.	.	.	O	punct	O	-1	O
+0	1	46	242	243		-1	"	"	``	``	O	null	B-QUOTE	-1	O
+0	1	47	243	244	S	50	I	I	I	PRP	O	nsubj	I-QUOTE	-1	O
+0	1	48	245	247	S	50	am	am	be	VBP	O	cop	I-QUOTE	-1	B-verb.stative
+0	1	49	248	250	S	50	no	no	no	DT	O	det	I-QUOTE	-1	O
+0	1	50	251	256		56	novel	novel	novel	NN	O	dep	I-QUOTE	-1	B-noun.communication
+0	1	51	256	257		52	-	-	-	HYPH	O	amod	I-QUOTE	-1	O
+0	1	52	257	263		50	reader	reader	reader	NN	O	dep	I-QUOTE	-1	O
+0	1	53	263	264		56	—	—	—	:	O	punct	I-QUOTE	-1	O
+0	1	54	264	265	S	56	I	I	I	PRP	O	nsubj	I-QUOTE	-1	O
+0	1	55	266	272	S	56	seldom	seldom	seldom	RB	O	advmod	I-QUOTE	-1	O
+0	1	56	273	277	S	46	look	look	look	VBP	O	null	I-QUOTE	-1	B-verb.perception
+0	1	57	278	282	S	56	into	into	into	IN	O	prep	I-QUOTE	-1	O
+0	1	58	283	289		57	novels	novels	novel	NNS	O	pobj	I-QUOTE	-1	B-noun.communication
+0	1	59	289	290		56	—	—	—	:	O	punct	I-QUOTE	-1	O
+0	1	60	290	292	S	62	Do	Do	do	VBP	O	aux	I-QUOTE	-1	O
+0	1	61	293	296	S	62	not	not	not	RB	O	neg	I-QUOTE	-1	O
+0	1	62	297	304	S	56	imagine	imagine	imagine	VB	O	parataxis	I-QUOTE	-1	B-verb.creation
+0	1	63	305	309	S	68	that	that	that	IN	O	complm	I-QUOTE	-1	O
+0	1	64	310	311		68	_	_	_	NFP	O	advmod	I-QUOTE	-1	O
+0	1	65	311	312		68	I	I	I	PRP	O	nsubj	I-QUOTE	-1	O
+0	1	66	312	313	N	68	_	_	_	NFP	O	punct	I-QUOTE	-1	O
+0	1	67	314	319	S	68	often	often	often	RB	O	advmod	I-QUOTE	-1	O
+0	1	68	320	324	S	62	read	read	read	VBP	O	ccomp	I-QUOTE	-1	B-verb.cognition
+0	1	69	325	331		68	novels	novels	novel	NNS	O	dobj	I-QUOTE	-1	B-noun.communication
+0	1	70	331	332		76	—	—	—	:	O	punct	I-QUOTE	-1	O
+0	1	71	332	334	S	75	It	It	it	PRP	O	nsubj	I-QUOTE	-1	O
+0	1	72	335	337	S	75	is	is	be	VBZ	O	cop	I-QUOTE	-1	B-verb.stative
+0	1	73	338	344	S	75	really	really	really	RB	O	advmod	I-QUOTE	-1	O
+0	1	74	345	349	S	75	very	very	very	RB	O	advmod	I-QUOTE	-1	O
+0	1	75	350	354	S	76	well	well	well	RB	O	dep	I-QUOTE	-1	O
+0	1	76	355	358	S	56	for	for	for	IN	O	dep	I-QUOTE	-1	O
+0	1	77	359	360	S	78	a	a	a	DT	O	det	I-QUOTE	-1	O
+0	1	78	361	366		76	novel	novel	novel	NN	O	pobj	I-QUOTE	-1	B-noun.communication
+0	1	79	366	367		56	.	.	.	.	O	punct	I-QUOTE	-1	O
+0	1	80	367	368	S	56	"	"	''	''	O	punct	I-QUOTE	-1	O
+0	2	81	369	373	S	85	Such	Such	such	JJ	O	nsubj	O	-1	O
+0	2	82	374	376	S	85	is	is	be	VBZ	O	cop	O	-1	B-verb.stative
+0	2	83	377	380	N	85	the	the	the	DT	O	det	O	-1	O
+0	2	84	381	387	S	85	common	common	common	JJ	O	amod	O	-1	O
+0	2	85	388	392		-1	cant	cant	cant	NN	O	null	O	-1	B-noun.communication
+0	2	86	392	393	S	85	.	.	.	.	O	punct	O	-1	O
+0	3	87	394	395		94	"	"	``	``	O	punct	B-QUOTE	-1	O
+0	3	88	395	398	S	94	And	And	and	CC	O	cc	I-QUOTE	-1	O
+0	3	89	399	403	S	92	what	what	what	WP	O	nsubj	I-QUOTE	-1	O
+0	3	90	404	407	S	92	are	are	be	VBP	O	aux	I-QUOTE	-1	O
+0	3	91	408	411	S	92	you	you	you	PRP	O	nsubj	I-QUOTE	-1	O
+0	3	92	412	419		94	reading	reading	read	VBG	O	conj	I-QUOTE	-1	B-verb.cognition
+0	3	93	419	420	S	94	,	,	,	,	O	punct	I-QUOTE	-1	O
+0	3	94	421	425		-1	Miss	Miss	Miss	NNP	STATE_OR_PROVINCE	null	I-QUOTE	-1	O
+0	3	95	425	426		94	—	—	—	:	O	punct	I-QUOTE	-1	O
+0	3	96	426	427		94	?	?	?	.	O	punct	I-QUOTE	-1	O
+0	3	97	427	428	S	94	"	"	''	''	O	punct	I-QUOTE	-1	O
+0	4	98	429	430		-1	"	"	``	``	O	null	O	-1	O
+0	4	99	430	432		98	Oh	Oh	oh	UH	O	dep	O	-1	O
+0	4	100	432	433	S	98	!	!	!	.	O	punct	O	-1	O
+0	5	101	434	436	S	105	It	It	it	PRP	O	nsubj	O	-1	O
+0	5	102	437	439	S	105	is	is	be	VBZ	O	cop	O	-1	B-verb.stative
+0	5	103	440	444	S	105	only	only	only	RB	O	advmod	O	-1	O
+0	5	104	445	446	N	105	a	a	a	DT	O	det	O	-1	O
+0	5	105	447	452		-1	novel	novel	novel	NN	O	null	O	-1	B-noun.communication
+0	5	106	452	453		105	!	!	!	.	O	punct	O	-1	O
+0	6	107	453	454	S	-1	"	"	``	``	O	null	B-QUOTE	-1	O
+0	6	108	455	462	S	107	replies	replies	reply	VBZ	O	poss	I-QUOTE	-1	B-verb.communication
+0	6	109	463	466	S	111	the	the	the	DT	O	det	I-QUOTE	-1	O
+0	6	110	467	472	S	111	young	young	young	JJ	O	amod	I-QUOTE	-1	O
+0	6	111	473	477		108	lady	lady	lady	NN	O	dobj	I-QUOTE	-1	B-noun.person
+0	6	112	477	478	S	108	,	,	,	,	O	punct	I-QUOTE	-1	O
+0	6	113	479	484	S	115	while	while	while	IN	O	mark	I-QUOTE	-1	O
+0	6	114	485	488	S	115	she	she	she	PRP	O	nsubj	I-QUOTE	-1	O
+0	6	115	489	493	S	108	lays	lays	lay	VBZ	O	advcl	I-QUOTE	-1	B-verb.contact
+0	6	116	494	498	S	115	down	down	down	IN	O	prep	I-QUOTE	-1	O
+0	6	117	499	502	S	118	her	her	she	PRP$	O	poss	I-QUOTE	-1	O
+0	6	118	503	507	S	116	book	book	book	NN	O	pobj	I-QUOTE	-1	B-noun.communication
+0	6	119	508	512	N	118	with	with	with	IN	O	prep	I-QUOTE	-1	O
+0	6	120	513	521	S	121	affected	affected	affect	VBN	O	amod	I-QUOTE	-1	B-verb.change
+0	6	121	522	534		119	indifference	indifference	indifference	NN	O	pobj	I-QUOTE	-1	B-noun.feeling
+0	6	122	534	535	S	121	,	,	,	,	O	punct	I-QUOTE	-1	O
+0	6	123	536	538	S	121	or	or	or	CC	O	cc	I-QUOTE	-1	O
+0	6	124	539	548	S	125	momentary	momentary	momentary	JJ	O	amod	I-QUOTE	-1	O
+0	6	125	549	554		121	shame	shame	shame	NN	O	conj	I-QUOTE	-1	B-noun.feeling
+0	6	126	554	555	S	107	.	.	.	.	O	punct	I-QUOTE	-1	O
+0	6	127	556	557		107	"	"	''	''	O	punct	I-QUOTE	-1	O
+0	7	128	557	559	S	131	It	It	it	PRP	O	nsubj	O	-1	O
+0	7	129	560	562	S	131	is	is	be	VBZ	O	cop	O	-1	B-verb.stative
+0	7	130	563	567	S	131	only	only	only	RB	O	advmod	O	-1	O
+0	7	131	568	575		-1	Cecilia	Cecilia	Cecilia	NNP	PERSON	null	O	-1	O
+0	7	132	575	576	S	131	,	,	,	,	O	punct	O	-1	O
+0	7	133	577	579	N	131	or	or	or	CC	O	cc	O	-1	O
+0	7	134	580	587		131	Camilla	Camilla	Camilla	NNP	PERSON	conj	O	-1	O
+0	7	135	587	588	S	131	,	,	,	,	O	punct	O	-1	O
+0	7	136	589	591	S	131	or	or	or	CC	O	cc	O	-1	O
+0	7	137	592	599		131	Belinda	Belinda	Belinda	NNP	O	conj	O	-1	O
+0	7	138	599	600		131	"	"	''	''	O	punct	O	-1	O
+0	7	139	600	601	S	131	;	;	;	:	O	punct	O	-1	O
+0	7	140	602	604		131	or	or	or	CC	O	cc	O	-1	O
+0	7	141	604	605	S	147	,	,	,	,	O	punct	O	-1	O
+0	7	142	606	608	S	147	in	in	in	IN	O	prep	O	-1	O
+0	7	143	609	614		142	short	short	short	JJ	O	pobj	O	-1	O
+0	7	144	614	615	S	147	,	,	,	,	O	punct	O	-1	O
+0	7	145	616	620	S	147	only	only	only	RB	O	advmod	O	-1	O
+0	7	146	621	625	S	147	some	some	some	DT	O	det	O	-1	O
+0	7	147	626	630	S	131	work	work	work	NN	O	dep	O	-1	B-noun.act
+0	7	148	631	633	S	157	in	in	in	IN	O	rel	O	-1	O
+0	7	149	634	639	S	148	which	which	which	WDT	O	pobj	O	-1	O
+0	7	150	640	643	N	152	the	the	the	DT	O	det	O	-1	O
+0	7	151	644	652	S	152	greatest	greatest	greatest	JJS	O	amod	O	-1	O
+0	7	152	653	659	S	157	powers	powers	power	NNS	O	nsubjpass	O	-1	B-noun.cognition
+0	7	153	660	662	S	152	of	of	of	IN	O	prep	O	-1	O
+0	7	154	663	666	S	155	the	the	the	DT	O	det	O	-1	O
+0	7	155	667	671	S	153	mind	mind	mind	NN	O	pobj	O	-1	B-noun.cognition
+0	7	156	672	675	S	157	are	are	be	VBP	O	auxpass	O	-1	O
+0	7	157	676	685		147	displayed	displayed	display	VBN	O	rcmod	O	-1	O
+0	7	158	685	686	S	157	,	,	,	,	O	punct	O	-1	O
+0	7	159	687	689	S	185	in	in	in	IN	O	rel	O	-1	O
+0	7	160	690	695	S	159	which	which	which	WDT	O	pobj	O	-1	O
+0	7	161	696	699	S	164	the	the	the	DT	O	det	O	-1	O
+0	7	162	700	704	S	163	most	most	most	RBS	O	advmod	O	-1	O
+0	7	163	705	713	N	164	thorough	thorough	thorough	JJ	O	amod	O	-1	O
+0	7	164	714	723	S	185	knowledge	knowledge	knowledge	NN	O	nsubjpass	O	-1	B-noun.Tops
+0	7	165	724	726	S	164	of	of	of	IN	O	prep	O	-1	O
+0	7	166	727	732	S	167	human	human	human	JJ	O	amod	O	-1	O
+0	7	167	733	739		165	nature	nature	nature	NN	O	pobj	O	-1	B-noun.attribute
+0	7	168	739	740	S	164	,	,	,	,	O	punct	O	-1	O
+0	7	169	741	744	S	171	the	the	the	DT	O	det	O	-1	O
+0	7	170	745	753	S	171	happiest	happiest	happiest	JJS	O	amod	O	-1	O
+0	7	171	754	765	S	164	delineation	delineation	delineation	NN	O	appos	O	-1	B-noun.communication
+0	7	172	766	768	S	171	of	of	of	IN	O	prep	O	-1	O
+0	7	173	769	772	S	174	its	its	its	PRP$	O	poss	O	-1	O
+0	7	174	773	782		172	varieties	varieties	variety	NNS	O	pobj	O	-1	B-noun.group
+0	7	175	782	783	N	164	,	,	,	,	O	punct	O	-1	O
+0	7	176	784	787	S	178	the	the	the	DT	O	det	O	-1	O
+0	7	177	788	797	S	178	liveliest	liveliest	liveliest	JJS	O	amod	O	-1	O
+0	7	178	798	807	S	164	effusions	effusions	effusion	NNS	O	appos	O	-1	B-noun.communication
+0	7	179	808	810	S	178	of	of	of	IN	O	prep	O	-1	O
+0	7	180	811	814	S	179	wit	wit	wit	NN	O	pobj	O	-1	B-noun.communication
+0	7	181	815	818	S	180	and	and	and	CC	O	cc	O	-1	O
+0	7	182	819	825		180	humour	humour	humour	NN	O	conj	O	-1	B-noun.feeling
+0	7	183	825	826	S	164	,	,	,	,	O	punct	O	-1	O
+0	7	184	827	830	S	185	are	are	be	VBP	O	auxpass	O	-1	O
+0	7	185	831	839	S	157	conveyed	conveyed	convey	VBN	O	purpcl	O	-1	B-verb.communication
+0	7	186	840	842	S	185	to	to	to	IN	O	prep	O	-1	O
+0	7	187	843	846	S	188	the	the	the	DT	O	det	O	-1	O
+0	7	188	847	852	S	186	world	world	world	NN	O	pobj	O	-1	B-noun.object
+0	7	189	853	855	N	185	in	in	in	IN	O	prep	O	-1	O
+0	7	190	856	859	S	194	the	the	the	DT	O	det	O	-1	O
+0	7	191	860	864		192	best	best	best	RBS	O	advmod	O	-1	O
+0	7	192	864	865		194	-	-	-	HYPH	O	dep	O	-1	O
+0	7	193	865	871	S	194	chosen	chosen	choose	VBN	O	amod	O	-1	B-verb.cognition
+0	7	194	872	880		189	language	language	language	NN	O	pobj	O	-1	B-noun.communication
+0	7	195	880	881	S	131	.	.	.	.	O	punct	O	-1	O
+0	8	196	882	885		198	Now	Now	now	RB	DATE	advmod	O	-1	O
+0	8	197	885	886	S	198	,	,	,	,	O	punct	O	-1	O
+0	8	198	887	890	S	-1	had	had	have	VBD	O	null	O	-1	O
+0	8	199	891	894	S	202	the	the	the	DT	O	det	O	-1	O
+0	8	200	895	899	S	202	same	same	same	JJ	O	amod	O	-1	O
+0	8	201	900	905	S	202	young	young	young	JJ	O	amod	O	-1	O
+0	8	202	906	910	S	204	lady	lady	lady	NN	O	nsubjpass	O	-1	B-noun.person
+0	8	203	911	915	S	204	been	been	be	VBN	O	auxpass	O	-1	O
+0	8	204	916	923	N	198	engaged	engaged	engage	VBN	O	xcomp	O	-1	B-verb.social
+0	8	205	924	928	S	204	with	with	with	IN	O	prep	O	-1	O
+0	8	206	929	930	S	207	a	a	a	DT	O	det	O	-1	O
+0	8	207	931	937	S	205	volume	volume	volume	NN	O	pobj	O	-1	B-noun.quantity
+0	8	208	938	940	S	207	of	of	of	IN	O	prep	O	-1	O
+0	8	209	941	944	S	210	the	the	the	DT	O	det	O	-1	O
+0	8	210	945	954		208	Spectator	Spectator	Spectator	NNP	O	pobj	O	-1	B-noun.person
+0	8	211	954	955	S	204	,	,	,	,	O	punct	O	-1	O
+0	8	212	956	963	S	204	instead	instead	instead	RB	O	advmod	O	-1	O
+0	8	213	964	966	S	212	of	of	of	IN	O	dep	O	-1	O
+0	8	214	967	971	S	216	such	such	such	PDT	O	predet	O	-1	O
+0	8	215	972	973	S	216	a	a	a	DT	O	det	O	-1	O
+0	8	216	974	978		213	work	work	work	NN	O	pobj	O	-1	B-noun.act
+0	8	217	978	979	S	204	,	,	,	,	O	punct	O	-1	O
+0	8	218	980	983	S	223	how	how	how	WRB	O	advmod	O	-1	O
+0	8	219	984	991	N	218	proudly	proudly	proudly	RB	O	advmod	O	-1	O
+0	8	220	992	997	S	223	would	would	would	MD	O	aux	O	-1	O
+0	8	221	998	1001	S	223	she	she	she	PRP	O	nsubj	O	-1	O
+0	8	222	1002	1006	S	223	have	have	have	VB	O	aux	O	-1	O
+0	8	223	1007	1015	S	204	produced	produced	produce	VBN	O	ccomp	O	-1	B-verb.creation
+0	8	224	1016	1019	S	225	the	the	the	DT	O	det	O	-1	O
+0	8	225	1020	1024		223	book	book	book	NN	O	dobj	O	-1	B-noun.communication
+0	8	226	1024	1025	S	204	,	,	,	,	O	punct	O	-1	O
+0	8	227	1026	1029	S	204	and	and	and	CC	O	cc	O	-1	O
+0	8	228	1030	1034	S	204	told	told	tell	VBD	O	conj	O	-1	B-verb.communication
+0	8	229	1035	1038	S	230	its	its	its	PRP$	O	poss	O	-1	O
+0	8	230	1039	1043		228	name	name	name	NN	O	dobj	O	-1	B-noun.communication
+0	8	231	1043	1044	S	198	;	;	;	:	O	punct	O	-1	O
+0	8	232	1045	1051	S	236	though	though	though	IN	O	mark	O	-1	O
+0	8	233	1052	1055	S	234	the	the	the	DT	O	det	O	-1	O
+0	8	234	1056	1063	N	236	chances	chances	chance	NNS	O	nsubj	O	-1	B-noun.state
+0	8	235	1064	1068	S	236	must	must	must	MD	O	aux	O	-1	O
+0	8	236	1069	1071	S	198	be	be	be	VB	O	advcl	O	-1	B-verb.stative
+0	8	237	1072	1079	S	240	against	against	against	IN	O	mark	O	-1	O
+0	8	238	1080	1083	S	240	her	her	she	PRP	O	nsubjpass	O	-1	O
+0	8	239	1084	1089	S	240	being	being	be	VBG	O	auxpass	O	-1	O
+0	8	240	1090	1098	S	236	occupied	occupied	occupy	VBN	O	advcl	O	-1	B-verb.social
+0	8	241	1099	1101	S	240	by	by	by	IN	O	prep	O	-1	O
+0	8	242	1102	1105	S	243	any	any	any	DT	O	det	O	-1	O
+0	8	243	1106	1110	S	241	part	part	part	NN	O	pobj	O	-1	B-noun.relation
+0	8	244	1111	1113	S	243	of	of	of	IN	O	prep	O	-1	O
+0	8	245	1114	1118	S	247	that	that	that	DT	O	det	O	-1	O
+0	8	246	1119	1129	N	247	voluminous	voluminous	voluminous	JJ	O	amod	O	-1	O
+0	8	247	1130	1141		244	publication	publication	publication	NN	O	pobj	O	-1	B-noun.communication
+0	8	248	1141	1142	S	247	,	,	,	,	O	punct	O	-1	O
+0	8	249	1143	1145	S	258	of	of	of	IN	O	rel	O	-1	O
+0	8	250	1146	1151	S	249	which	which	which	WDT	O	pobj	O	-1	O
+0	8	251	1152	1158	S	253	either	either	either	CC	O	preconj	O	-1	O
+0	8	252	1159	1162	S	253	the	the	the	DT	O	det	O	-1	O
+0	8	253	1163	1169	S	258	matter	matter	matter	NN	O	nn	O	-1	B-noun.cognition
+0	8	254	1170	1172	S	253	or	or	or	CC	O	cc	O	-1	O
+0	8	255	1173	1179	S	253	manner	manner	manner	NN	O	conj	O	-1	B-noun.attribute
+0	8	256	1180	1185	S	258	would	would	would	MD	O	aux	O	-1	O
+0	8	257	1186	1189	S	258	not	not	not	RB	O	neg	O	-1	O
+0	8	258	1190	1197	S	247	disgust	disgust	disgust	NN	O	appos	O	-1	B-noun.feeling
+0	8	259	1198	1199	N	261	a	a	a	DT	O	det	O	-1	O
+0	8	260	1200	1205	S	261	young	young	young	JJ	O	amod	O	-1	O
+0	8	261	1206	1212	S	258	person	person	person	NN	O	dep	O	-1	B-noun.person
+0	8	262	1213	1215	S	261	of	of	of	IN	O	prep	O	-1	O
+0	8	263	1216	1221		262	taste	taste	taste	NN	O	pobj	O	-1	B-noun.cognition
+0	8	264	1221	1222	S	258	:	:	:	:	O	punct	O	-1	O
+0	8	265	1223	1226	S	266	the	the	the	DT	O	det	O	-1	O
+0	8	266	1227	1236	S	258	substance	substance	substance	NN	O	conj	O	-1	B-noun.Tops
+0	8	267	1237	1239	S	266	of	of	of	IN	O	prep	O	-1	O
+0	8	268	1240	1243	S	269	its	its	its	PRP$	O	poss	O	-1	O
+0	8	269	1244	1250	S	267	papers	papers	papers	NNS	O	pobj	O	-1	B-noun.communication
+0	8	270	1251	1253	S	271	so	so	so	RB	O	advmod	O	-1	O
+0	8	271	1254	1259	S	272	often	often	often	RB	O	advmod	O	-1	O
+0	8	272	1260	1270	N	269	consisting	consisting	consist	VBG	O	partmod	O	-1	B-verb.stative
+0	8	273	1271	1273	S	272	in	in	in	IN	O	prep	O	-1	O
+0	8	274	1274	1277	S	275	the	the	the	DT	O	det	O	-1	O
+0	8	275	1278	1287	S	273	statement	statement	statement	NN	O	pobj	O	-1	B-noun.communication
+0	8	276	1288	1290	S	275	of	of	of	IN	O	prep	O	-1	O
+0	8	277	1291	1301	S	278	improbable	improbable	improbable	JJ	O	amod	O	-1	O
+0	8	278	1302	1315		276	circumstances	circumstances	circumstance	NNS	O	pobj	O	-1	B-noun.state
+0	8	279	1315	1316	S	269	,	,	,	,	O	punct	O	-1	O
+0	8	280	1317	1326	S	281	unnatural	unnatural	unnatural	JJ	O	amod	O	-1	O
+0	8	281	1327	1337		269	characters	characters	character	NNS	O	conj	O	-1	B-noun.person
+0	8	282	1337	1338	S	266	,	,	,	,	O	punct	O	-1	O
+0	8	283	1339	1342	N	266	and	and	and	CC	O	cc	O	-1	O
+0	8	284	1343	1349	S	266	topics	topics	topic	NNS	O	conj	O	-1	B-noun.communication
+0	8	285	1350	1352	S	284	of	of	of	IN	O	prep	O	-1	O
+0	8	286	1353	1365	S	285	conversation	conversation	conversation	NN	O	pobj	O	-1	B-noun.communication
+0	8	287	1366	1371	S	286	which	which	which	WDT	O	amod	O	-1	O
+0	8	288	1372	1374	S	289	no	no	no	RB	O	advmod	O	-1	O
+0	8	289	1375	1381	S	291	longer	longer	longer	RB	O	advmod	O	-1	O
+0	8	290	1382	1389	S	291	concern	concern	concern	NN	O	nn	O	-1	B-noun.cognition
+0	8	291	1390	1396	S	287	anyone	anyone	anyone	NN	O	ccomp	O	-1	O
+0	8	292	1397	1403		291	living	living	live	VBG	O	partmod	O	-1	B-verb.stative
+0	8	293	1403	1404	S	236	;	;	;	:	O	punct	O	-1	O
+0	8	294	1405	1408	S	236	and	and	and	CC	O	cc	O	-1	O
+0	8	295	1409	1414	N	296	their	their	they	PRP$	O	poss	O	-1	O
+0	8	296	1415	1423		236	language	language	language	NN	O	conj	O	-1	B-noun.communication
+0	8	297	1423	1424	S	296	,	,	,	,	O	punct	O	-1	O
+0	8	298	1425	1428		296	too	too	too	RB	O	advmod	O	-1	O
+0	8	299	1428	1429	S	296	,	,	,	,	O	punct	O	-1	O
+0	8	300	1430	1440	S	302	frequently	frequently	frequently	RB	O	advmod	O	-1	O
+0	8	301	1441	1443	S	302	so	so	so	RB	O	advmod	O	-1	O
+0	8	302	1444	1450	S	296	coarse	coarse	coarse	JJ	O	amod	O	-1	O
+0	8	303	1451	1453	S	305	as	as	as	IN	O	mark	O	-1	O
+0	8	304	1454	1456	S	305	to	to	to	TO	O	aux	O	-1	O
+0	8	305	1457	1461	S	302	give	give	give	VB	O	dep	O	-1	B-verb.possession
+0	8	306	1462	1464	S	309	no	no	no	DT	O	det	O	-1	O
+0	8	307	1465	1469	S	308	very	very	very	RB	O	advmod	O	-1	O
+0	8	308	1470	1480	S	309	favourable	favourable	favourable	JJ	O	amod	O	-1	O
+0	8	309	1481	1485	N	305	idea	idea	idea	NN	O	dobj	O	-1	B-noun.cognition
+0	8	310	1486	1488	S	309	of	of	of	IN	O	prep	O	-1	O
+0	8	311	1489	1492	S	312	the	the	the	DT	O	det	O	-1	O
+0	8	312	1493	1496	S	310	age	age	age	NN	O	pobj	O	-1	B-noun.attribute
+0	8	313	1497	1501	S	315	that	that	that	WDT	O	nsubj	O	-1	O
+0	8	314	1502	1507	S	315	could	could	could	MD	O	aux	O	-1	O
+0	8	315	1508	1514	S	309	endure	endure	endure	VB	O	rcmod	O	-1	B-verb.perception
+0	8	316	1515	1517		315	it	it	it	PRP	O	dobj	O	-1	O
+0	8	317	1517	1518	NNNNN	198	.	.	.	.	O	punct	O	-1	O
