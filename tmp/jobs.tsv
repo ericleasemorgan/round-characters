@@ -1,47 +1,243 @@
-./tokens/sense_001.tsv	0	./sentences/sense_001.txt
-./tokens/sense_003.tsv	1	./sentences/sense_003.txt
-./tokens/sense_004.tsv	0	./sentences/sense_004.txt
-./tokens/sense_005.tsv	0	./sentences/sense_005.txt
-./tokens/sense_007.tsv	0	./sentences/sense_007.txt
-./tokens/sense_008.tsv	1	./sentences/sense_008.txt
-./tokens/sense_009.tsv	0	./sentences/sense_009.txt
-./tokens/sense_010.tsv	0	./sentences/sense_010.txt
-./tokens/sense_011.tsv	1	./sentences/sense_011.txt
-./tokens/sense_012.tsv	1	./sentences/sense_012.txt
-./tokens/sense_013.tsv	2	./sentences/sense_013.txt
-./tokens/sense_014.tsv	3	./sentences/sense_014.txt
-./tokens/sense_015.tsv	1	./sentences/sense_015.txt
-./tokens/sense_016.tsv	1	./sentences/sense_016.txt
-./tokens/sense_017.tsv	0	./sentences/sense_017.txt
-./tokens/sense_018.tsv	0	./sentences/sense_018.txt
-./tokens/sense_019.tsv	1	./sentences/sense_019.txt
-./tokens/sense_020.tsv	1	./sentences/sense_020.txt
-./tokens/sense_021.tsv	9	./sentences/sense_021.txt
-./tokens/sense_022.tsv	1	./sentences/sense_022.txt
-./tokens/sense_023.tsv	0	./sentences/sense_023.txt
-./tokens/sense_024.tsv	0	./sentences/sense_024.txt
-./tokens/sense_025.tsv	4	./sentences/sense_025.txt
-./tokens/sense_026.tsv	2	./sentences/sense_026.txt
-./tokens/sense_027.tsv	0	./sentences/sense_027.txt
-./tokens/sense_028.tsv	1	./sentences/sense_028.txt
-./tokens/sense_029.tsv	1	./sentences/sense_029.txt
-./tokens/sense_030.tsv	2	./sentences/sense_030.txt
-./tokens/sense_031.tsv	0	./sentences/sense_031.txt
-./tokens/sense_032.tsv	7	./sentences/sense_032.txt
-./tokens/sense_033.tsv	1	./sentences/sense_033.txt
-./tokens/sense_034.tsv	6	./sentences/sense_034.txt
-./tokens/sense_035.tsv	0	./sentences/sense_035.txt
-./tokens/sense_036.tsv	8	./sentences/sense_036.txt
-./tokens/sense_037.tsv	4	./sentences/sense_037.txt
-./tokens/sense_038.tsv	6	./sentences/sense_038.txt
-./tokens/sense_039.tsv	0	./sentences/sense_039.txt
-./tokens/sense_040.tsv	0	./sentences/sense_040.txt
-./tokens/sense_041.tsv	6	./sentences/sense_041.txt
-./tokens/sense_042.tsv	2	./sentences/sense_042.txt
-./tokens/sense_043.tsv	2	./sentences/sense_043.txt
-./tokens/sense_044.tsv	2	./sentences/sense_044.txt
-./tokens/sense_045.tsv	1	./sentences/sense_045.txt
-./tokens/sense_046.tsv	2	./sentences/sense_046.txt
-./tokens/sense_047.tsv	5	./sentences/sense_047.txt
-./tokens/sense_048.tsv	0	./sentences/sense_048.txt
-./tokens/sense_049.tsv	1	./sentences/sense_049.txt
+./sentences/emma_040.txt	./scores/emma_040.tsv
+./sentences/emma_032.txt	./scores/emma_032.tsv
+./sentences/emma_043.txt	./scores/emma_043.tsv
+./sentences/emma_054.txt	./scores/emma_054.tsv
+./sentences/emma_045.txt	./scores/emma_045.tsv
+./sentences/emma_009.txt	./scores/emma_009.tsv
+./sentences/emma_019.txt	./scores/emma_019.tsv
+./sentences/emma_015.txt	./scores/emma_015.tsv
+./sentences/emma_006.txt	./scores/emma_006.tsv
+./sentences/emma_016.txt	./scores/emma_016.tsv
+./sentences/emma_012.txt	./scores/emma_012.tsv
+./sentences/emma_053.txt	./scores/emma_053.tsv
+./sentences/emma_042.txt	./scores/emma_042.tsv
+./sentences/emma_044.txt	./scores/emma_044.tsv
+./sentences/emma_014.txt	./scores/emma_014.tsv
+./sentences/emma_035.txt	./scores/emma_035.tsv
+./sentences/emma_028.txt	./scores/emma_028.tsv
+./sentences/emma_027.txt	./scores/emma_027.tsv
+./sentences/emma_052.txt	./scores/emma_052.tsv
+./sentences/emma_038.txt	./scores/emma_038.tsv
+./sentences/emma_008.txt	./scores/emma_008.tsv
+./sentences/emma_003.txt	./scores/emma_003.tsv
+./sentences/emma_025.txt	./scores/emma_025.tsv
+./sentences/emma_051.txt	./scores/emma_051.tsv
+./sentences/emma_048.txt	./scores/emma_048.tsv
+./sentences/emma_031.txt	./scores/emma_031.tsv
+./sentences/emma_050.txt	./scores/emma_050.tsv
+./sentences/emma_004.txt	./scores/emma_004.tsv
+./sentences/emma_037.txt	./scores/emma_037.tsv
+./sentences/emma_036.txt	./scores/emma_036.tsv
+./sentences/emma_021.txt	./scores/emma_021.tsv
+./sentences/emma_041.txt	./scores/emma_041.tsv
+./sentences/emma_002.txt	./scores/emma_002.tsv
+./sentences/emma_024.txt	./scores/emma_024.tsv
+./sentences/emma_018.txt	./scores/emma_018.tsv
+./sentences/emma_017.txt	./scores/emma_017.tsv
+./sentences/emma_023.txt	./scores/emma_023.tsv
+./sentences/emma_046.txt	./scores/emma_046.tsv
+./sentences/emma_007.txt	./scores/emma_007.tsv
+./sentences/emma_005.txt	./scores/emma_005.tsv
+./sentences/emma_034.txt	./scores/emma_034.tsv
+./sentences/emma_010.txt	./scores/emma_010.tsv
+./sentences/emma_029.txt	./scores/emma_029.tsv
+./sentences/emma_030.txt	./scores/emma_030.tsv
+./sentences/emma_026.txt	./scores/emma_026.tsv
+./sentences/emma_033.txt	./scores/emma_033.tsv
+./sentences/emma_049.txt	./scores/emma_049.tsv
+./sentences/emma_011.txt	./scores/emma_011.tsv
+./sentences/emma_047.txt	./scores/emma_047.tsv
+./sentences/emma_020.txt	./scores/emma_020.tsv
+./sentences/emma_013.txt	./scores/emma_013.tsv
+./sentences/emma_001.txt	./scores/emma_001.tsv
+./sentences/mansfield_007.txt	./scores/mansfield_007.tsv
+./sentences/mansfield_004.txt	./scores/mansfield_004.tsv
+./sentences/mansfield_003.txt	./scores/mansfield_003.tsv
+./sentences/mansfield_001.txt	./scores/mansfield_001.tsv
+./sentences/mansfield_024.txt	./scores/mansfield_024.tsv
+./sentences/mansfield_002.txt	./scores/mansfield_002.tsv
+./sentences/mansfield_006.txt	./scores/mansfield_006.tsv
+./sentences/mansfield_015.txt	./scores/mansfield_015.tsv
+./sentences/mansfield_041.txt	./scores/mansfield_041.tsv
+./sentences/mansfield_012.txt	./scores/mansfield_012.tsv
+./sentences/mansfield_009.txt	./scores/mansfield_009.tsv
+./sentences/mansfield_023.txt	./scores/mansfield_023.tsv
+./sentences/mansfield_026.txt	./scores/mansfield_026.tsv
+./sentences/mansfield_011.txt	./scores/mansfield_011.tsv
+./sentences/mansfield_030.txt	./scores/mansfield_030.tsv
+./sentences/mansfield_040.txt	./scores/mansfield_040.tsv
+./sentences/mansfield_027.txt	./scores/mansfield_027.tsv
+./sentences/mansfield_034.txt	./scores/mansfield_034.tsv
+./sentences/mansfield_021.txt	./scores/mansfield_021.tsv
+./sentences/mansfield_010.txt	./scores/mansfield_010.tsv
+./sentences/mansfield_036.txt	./scores/mansfield_036.tsv
+./sentences/mansfield_018.txt	./scores/mansfield_018.tsv
+./sentences/mansfield_017.txt	./scores/mansfield_017.tsv
+./sentences/mansfield_046.txt	./scores/mansfield_046.tsv
+./sentences/mansfield_008.txt	./scores/mansfield_008.tsv
+./sentences/mansfield_016.txt	./scores/mansfield_016.tsv
+./sentences/mansfield_035.txt	./scores/mansfield_035.tsv
+./sentences/mansfield_028.txt	./scores/mansfield_028.tsv
+./sentences/mansfield_047.txt	./scores/mansfield_047.tsv
+./sentences/mansfield_029.txt	./scores/mansfield_029.tsv
+./sentences/mansfield_045.txt	./scores/mansfield_045.tsv
+./sentences/mansfield_033.txt	./scores/mansfield_033.tsv
+./sentences/mansfield_022.txt	./scores/mansfield_022.tsv
+./sentences/mansfield_048.txt	./scores/mansfield_048.tsv
+./sentences/mansfield_019.txt	./scores/mansfield_019.tsv
+./sentences/mansfield_038.txt	./scores/mansfield_038.tsv
+./sentences/mansfield_037.txt	./scores/mansfield_037.tsv
+./sentences/mansfield_032.txt	./scores/mansfield_032.tsv
+./sentences/northanger_002.txt	./scores/northanger_002.tsv
+./sentences/northanger_001.txt	./scores/northanger_001.tsv
+./sentences/northanger_020.txt	./scores/northanger_020.tsv
+./sentences/northanger_007.txt	./scores/northanger_007.tsv
+./sentences/northanger_022.txt	./scores/northanger_022.tsv
+./sentences/northanger_028.txt	./scores/northanger_028.tsv
+./sentences/northanger_004.txt	./scores/northanger_004.tsv
+./sentences/northanger_013.txt	./scores/northanger_013.tsv
+./sentences/northanger_003.txt	./scores/northanger_003.tsv
+./sentences/northanger_014.txt	./scores/northanger_014.tsv
+./sentences/northanger_021.txt	./scores/northanger_021.tsv
+./sentences/northanger_032.txt	./scores/northanger_032.tsv
+./sentences/northanger_027.txt	./scores/northanger_027.tsv
+./sentences/northanger_019.txt	./scores/northanger_019.tsv
+./sentences/northanger_029.txt	./scores/northanger_029.tsv
+./sentences/northanger_018.txt	./scores/northanger_018.tsv
+./sentences/northanger_005.txt	./scores/northanger_005.tsv
+./sentences/northanger_024.txt	./scores/northanger_024.tsv
+./sentences/northanger_010.txt	./scores/northanger_010.tsv
+./sentences/northanger_023.txt	./scores/northanger_023.tsv
+./sentences/northanger_031.txt	./scores/northanger_031.tsv
+./sentences/northanger_025.txt	./scores/northanger_025.tsv
+./sentences/northanger_016.txt	./scores/northanger_016.tsv
+./sentences/pride_003.txt	./scores/pride_003.tsv
+./sentences/northanger_009.txt	./scores/northanger_009.tsv
+./sentences/northanger_030.txt	./scores/northanger_030.tsv
+./sentences/northanger_017.txt	./scores/northanger_017.tsv
+./sentences/northanger_011.txt	./scores/northanger_011.tsv
+./sentences/northanger_026.txt	./scores/northanger_026.tsv
+./sentences/northanger_012.txt	./scores/northanger_012.tsv
+./sentences/northanger_008.txt	./scores/northanger_008.tsv
+./sentences/persuasion_007.txt	./scores/persuasion_007.tsv
+./sentences/persuasion_013.txt	./scores/persuasion_013.tsv
+./sentences/persuasion_023.txt	./scores/persuasion_023.tsv
+./sentences/persuasion_006.txt	./scores/persuasion_006.tsv
+./sentences/persuasion_005.txt	./scores/persuasion_005.tsv
+./sentences/persuasion_019.txt	./scores/persuasion_019.tsv
+./sentences/persuasion_017.txt	./scores/persuasion_017.tsv
+./sentences/persuasion_009.txt	./scores/persuasion_009.tsv
+./sentences/persuasion_008.txt	./scores/persuasion_008.tsv
+./sentences/persuasion_002.txt	./scores/persuasion_002.tsv
+./sentences/persuasion_001.txt	./scores/persuasion_001.tsv
+./sentences/persuasion_016.txt	./scores/persuasion_016.tsv
+./sentences/persuasion_021.txt	./scores/persuasion_021.tsv
+./sentences/persuasion_003.txt	./scores/persuasion_003.tsv
+./sentences/persuasion_010.txt	./scores/persuasion_010.tsv
+./sentences/persuasion_011.txt	./scores/persuasion_011.tsv
+./sentences/persuasion_012.txt	./scores/persuasion_012.tsv
+./sentences/persuasion_020.txt	./scores/persuasion_020.tsv
+./sentences/persuasion_015.txt	./scores/persuasion_015.tsv
+./sentences/persuasion_018.txt	./scores/persuasion_018.tsv
+./sentences/persuasion_014.txt	./scores/persuasion_014.tsv
+./sentences/persuasion_022.txt	./scores/persuasion_022.tsv
+./sentences/pride_010.txt	./scores/pride_010.tsv
+./sentences/pride_006.txt	./scores/pride_006.tsv
+./sentences/pride_008.txt	./scores/pride_008.tsv
+./sentences/pride_009.txt	./scores/pride_009.tsv
+./sentences/pride_005.txt	./scores/pride_005.tsv
+./sentences/pride_004.txt	./scores/pride_004.tsv
+./sentences/pride_013.txt	./scores/pride_013.tsv
+./sentences/pride_007.txt	./scores/pride_007.tsv
+./sentences/pride_015.txt	./scores/pride_015.tsv
+./sentences/pride_011.txt	./scores/pride_011.tsv
+./sentences/pride_021.txt	./scores/pride_021.tsv
+./sentences/pride_029.txt	./scores/pride_029.tsv
+./sentences/pride_036.txt	./scores/pride_036.tsv
+./sentences/pride_020.txt	./scores/pride_020.tsv
+./sentences/pride_046.txt	./scores/pride_046.tsv
+./sentences/pride_043.txt	./scores/pride_043.tsv
+./sentences/pride_019.txt	./scores/pride_019.tsv
+./sentences/pride_037.txt	./scores/pride_037.tsv
+./sentences/pride_017.txt	./scores/pride_017.tsv
+./sentences/pride_049.txt	./scores/pride_049.tsv
+./sentences/pride_044.txt	./scores/pride_044.tsv
+./sentences/pride_024.txt	./scores/pride_024.tsv
+./sentences/pride_016.txt	./scores/pride_016.tsv
+./sentences/pride_041.txt	./scores/pride_041.tsv
+./sentences/pride_053.txt	./scores/pride_053.tsv
+./sentences/pride_031.txt	./scores/pride_031.tsv
+./sentences/pride_045.txt	./scores/pride_045.tsv
+./sentences/pride_026.txt	./scores/pride_026.tsv
+./sentences/pride_035.txt	./scores/pride_035.tsv
+./sentences/pride_032.txt	./scores/pride_032.tsv
+./sentences/pride_040.txt	./scores/pride_040.tsv
+./sentences/pride_051.txt	./scores/pride_051.tsv
+./sentences/pride_052.txt	./scores/pride_052.tsv
+./sentences/pride_047.txt	./scores/pride_047.tsv
+./sentences/pride_033.txt	./scores/pride_033.tsv
+./sentences/pride_018.txt	./scores/pride_018.tsv
+./sentences/pride_042.txt	./scores/pride_042.tsv
+./sentences/pride_034.txt	./scores/pride_034.tsv
+./sentences/pride_054.txt	./scores/pride_054.tsv
+./sentences/pride_055.txt	./scores/pride_055.tsv
+./sentences/pride_025.txt	./scores/pride_025.tsv
+./sentences/pride_039.txt	./scores/pride_039.tsv
+./sentences/pride_050.txt	./scores/pride_050.tsv
+./sentences/pride_022.txt	./scores/pride_022.tsv
+./sentences/pride_060.txt	./scores/pride_060.tsv
+./sentences/pride_023.txt	./scores/pride_023.tsv
+./sentences/pride_056.txt	./scores/pride_056.tsv
+./sentences/pride_048.txt	./scores/pride_048.tsv
+./sentences/pride_059.txt	./scores/pride_059.tsv
+./sentences/pride_057.txt	./scores/pride_057.tsv
+./sentences/pride_030.txt	./scores/pride_030.tsv
+./sentences/pride_027.txt	./scores/pride_027.tsv
+./sentences/pride_058.txt	./scores/pride_058.tsv
+./sentences/pride_038.txt	./scores/pride_038.tsv
+./sentences/pride_028.txt	./scores/pride_028.tsv
+./sentences/sense_009.txt	./scores/sense_009.tsv
+./sentences/sense_010.txt	./scores/sense_010.tsv
+./sentences/sense_011.txt	./scores/sense_011.tsv
+./sentences/sense_012.txt	./scores/sense_012.tsv
+./sentences/sense_004.txt	./scores/sense_004.tsv
+./sentences/sense_003.txt	./scores/sense_003.tsv
+./sentences/sense_020.txt	./scores/sense_020.tsv
+./sentences/sense_001.txt	./scores/sense_001.tsv
+./sentences/sense_014.txt	./scores/sense_014.tsv
+./sentences/sense_008.txt	./scores/sense_008.tsv
+./sentences/sense_005.txt	./scores/sense_005.tsv
+./sentences/sense_028.txt	./scores/sense_028.tsv
+./sentences/sense_015.txt	./scores/sense_015.tsv
+./sentences/sense_027.txt	./scores/sense_027.tsv
+./sentences/sense_047.txt	./scores/sense_047.tsv
+./sentences/sense_021.txt	./scores/sense_021.tsv
+./sentences/sense_037.txt	./scores/sense_037.tsv
+./sentences/sense_039.txt	./scores/sense_039.tsv
+./sentences/sense_030.txt	./scores/sense_030.tsv
+./sentences/sense_041.txt	./scores/sense_041.tsv
+./sentences/sense_022.txt	./scores/sense_022.tsv
+./sentences/sense_035.txt	./scores/sense_035.tsv
+./sentences/sense_040.txt	./scores/sense_040.tsv
+./sentences/sense_013.txt	./scores/sense_013.tsv
+./sentences/sense_016.txt	./scores/sense_016.tsv
+./sentences/sense_048.txt	./scores/sense_048.tsv
+./sentences/sense_017.txt	./scores/sense_017.tsv
+./sentences/sense_032.txt	./scores/sense_032.tsv
+./sentences/sense_038.txt	./scores/sense_038.tsv
+./sentences/sense_026.txt	./scores/sense_026.tsv
+./sentences/sense_033.txt	./scores/sense_033.tsv
+./sentences/sense_018.txt	./scores/sense_018.tsv
+./sentences/sense_034.txt	./scores/sense_034.tsv
+./sentences/sense_024.txt	./scores/sense_024.tsv
+./sentences/sense_029.txt	./scores/sense_029.tsv
+./sentences/sense_023.txt	./scores/sense_023.tsv
+./sentences/sense_045.txt	./scores/sense_045.tsv
+./sentences/sense_036.txt	./scores/sense_036.tsv
+./sentences/sense_043.txt	./scores/sense_043.tsv
+./sentences/sense_019.txt	./scores/sense_019.tsv
+./sentences/sense_049.txt	./scores/sense_049.tsv
+./sentences/sense_046.txt	./scores/sense_046.tsv
+./sentences/sense_044.txt	./scores/sense_044.tsv
+./sentences/sense_025.txt	./scores/sense_025.tsv
+./sentences/sense_031.txt	./scores/sense_031.tsv
