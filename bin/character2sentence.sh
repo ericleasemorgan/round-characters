@@ -11,7 +11,8 @@
 # configure
 SENTENCES='./sentences'
 CHARACTER2SENTENCE='./bin/character2sentence.py'
-EXTENSION='.tsv'
+EXTENSION='tsv'
+ROOT='./tokens'
 JOBS='./tmp/jobs.tsv'
 
 # sanity check
@@ -36,10 +37,11 @@ cat $TSV | while read FILE IDENTIFIER; do
 
 	# create output file name
 	BASENAME=$(basename $FILE .tsv)
+	FILE="$ROOT/$BASENAME.$EXTENSION"
 	OUTPUT="$SENTENCES/$BASENAME.txt"
 
 	# update the list
-	printf "$FILE$EXTENSION\t$IDENTIFIER\t$OUTPUT\n" >> $JOBS
+	printf "$FILE\t$IDENTIFIER\t$OUTPUT\n" >> $JOBS
 	
 done
 

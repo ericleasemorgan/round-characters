@@ -21,7 +21,7 @@ import os
 import spacy
 import string
 
-# sanity check; get input
+# sanity check and get input
 if len( sys.argv ) < 2 : sys.exit( "Usage: " + sys.argv[ 0 ] + " <file> <output>" )
 file   = sys.argv[ 1 ]
 output = sys.argv[ 2 ]
@@ -76,7 +76,7 @@ with open( file ) as handle :
 		unnecessary_percent = round( ( unnecessary_count / length ) * 100 )
 
 		# output
-		with open( output, 'a' ) as subhandle : subhandle.write( "\t".join( [ key, str( s ), str( length ), str( necessary_count ),  str( necessary_percent ), str( unnecessary_count ), str( unnecessary_percent ), sentence ] ) + '\n' )
+		with open( output, 'a' ) as subhandle : subhandle.write( "\t".join( [ key, str( s ), str( length ), str( necessary_count ), str( necessary_percent ), str( unnecessary_count ), str( unnecessary_percent ), sentence ] ) + '\n' )
 		
 # done
 exit
