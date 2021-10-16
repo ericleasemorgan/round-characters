@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 
 # character2sentence.sh - a front-end to character2sentence.py
+# usage: find etc -name 'characters*.tsv' -exec ./bin/character2sentence.sh {} \;
 
 # Eric Lease Morgan <emorgan@nd.edu>
 # (c) University of Notre Dame; distributed under a GNU Public License
 
 # September 20, 2021 - first cut; back from Lancaster
+# October   16, 2021 - modified for new version of character2sentence.py; Alexandra's birthday
 
 
 # configure
-SENTENCES='./sentences'
 CHARACTER2SENTENCE='./bin/character2sentence.py'
 EXTENSION='tsv'
 ROOT='./tokens'
@@ -31,20 +32,18 @@ rm -rf $JOBS
 cat $TSV | while read FILE IDENTIFIER; do
 
 	# debug
-	echo $FILE >&2
+	echo $FILE       >&2
 	echo $IDENTIFIER >&2
 	echo
 
-	# create output file name
+	# get the base name (key)
 	BASENAME=$(basename $FILE .tsv)
-	FILE="$ROOT/$BASENAME.$EXTENSION"
-	OUTPUT="$SENTENCES/$BASENAME.txt"
 
 	# update the list
-	printf "$FILE\t$IDENTIFIER\t$OUTPUT\n" >> $JOBS
+	printf "$BASENAME\t$IDENTIFIER\n" >> $JOBS
 	
 done
 
 # submit the work and done
-cat $JOBS | parallel --colsep '\t' $CHARACTER2SENTENCE {1} {2} {3}
+cat $JOBS | parallel --colsep '\t' $CHARACTER2SENTENCE {1} {2}
 exit
