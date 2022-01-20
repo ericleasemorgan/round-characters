@@ -2,7 +2,7 @@
 
 
 # configure
-PARAMETERS = { "pipeline":"entity,quote,supersense,event,coref", "model":"big" }
+PARAMETERS = { "pipeline":"entity,quote,supersense,event,coref", "model":"small" }
 LANGUAGE   = 'en'
 
 # require
