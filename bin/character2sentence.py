@@ -8,13 +8,11 @@
 # September 10, 2021 - first investigations
 # September 20, 2021 - tweaked to add command-line input
 # October   15, 2021 - hacking to accomodate speakers
+# January   25, 2022 - revising to work with Python BookNLP
 
 
-# configure, in liu of command line input
-TSV               = './tokens'
-JSON              = './json'
-SENTENCESMAIN     = './sentences-main'
-SENTENCESNARRATOR = './sentences-narrator'
+# configure
+ROOT = './tmp'
 
 # require
 from os import remove, path
@@ -26,7 +24,7 @@ import sys
 # sanity check; get input
 if len( sys.argv ) != 3 : sys.exit( "Usage: " + sys.argv[ 0 ] + " <basename> <id>" )
 basename    = sys.argv[ 1 ]
-characterID = sys.argv[ 2 ]
+characterID = int( sys.argv[ 2 ] )
 
 # define link token offset to sentence id
 def link( tokens, offsets ) :
@@ -38,15 +36,15 @@ def link( tokens, offsets ) :
 	for offset in offsets :
 
 		# find the token, get the identifier, and update
-		identifier = list( tokens.loc[ tokens[ 'tokenId' ] == offset ][ 'sentenceID' ])[ 0 ]
+		identifier = list( tokens.loc[ tokens[ 'token_ID_within_document' ] == offset ][ 'sentence_ID' ] )[ 0 ]
 		items.append( identifier )
 
 	# done; return a set
 	return set( items )
 	
 
-# define save sentences
-def saveSentences( identifiers, directory, basename ) :
+# given tokens and identifiers, return sentences
+def identifiers2sentences( tokens, identifiers, directory, basename ) :
 
 	# initialize
 	sentences = []
@@ -55,7 +53,7 @@ def saveSentences( identifiers, directory, basename ) :
 	for identifier in identifiers :
 
 		# parse
-		items = tokens[ tokens[ 'sentenceID' ] == identifier ]['originalWord']
+		items = tokens[ tokens[ 'sentence_ID' ] == identifier ][ 'word' ]
 	
 		# to the best of my ability, normalize; why are there tab characters here?
 		sentence = ' '.join( items )
@@ -67,62 +65,33 @@ def saveSentences( identifiers, directory, basename ) :
 		sentence = re.sub( ' ,',   ',',   sentence )
 		sentence = re.sub( ' ;',   ';',   sentence )
 		sentence = re.sub( " 's ", "'s ", sentence )
-	
+			
 		# update
 		sentences.append( sentence )
-		
+			
 	# create file name, (re-)initialize, and output
 	file = directory + '/' + basename + '.txt'
 	if path.exists( file ) : remove( file )
 	with open( file, 'w' ) as handle : handle.write( '\n'.join( sentences ) )
-	
+
 	# done
-	return
+	return( sentences )
 
 
 # initialize
-tsv    = TSV  + '/' + basename + '.tsv'
-data   = JSON + '/' + basename + '.json'
-main   = []
-others = []
+entities = ROOT + '/' + basename + '.entities'
+tokens   = ROOT + '/' + basename + '.tokens'
 
-# slurp up the given json file
-with open( data, 'r' ) as handle : data = json.load( handle )
+# slurp up the entities and tokens as data frames
+entities = pd.read_csv( entities, sep='\t' )
+tokens   = pd.read_csv( tokens, sep='\t' )
 
-# get and process each character
-characters = data[ 'characters' ]
-for character in characters :
-		
-	# get and process each spoken sentence
-	sentences = character[ 'speaking' ]
-	for sentence in sentences :
-	
-		# parse and update accordingly
-		offset = sentence[ 'i' ]
-		if str( character[ 'id' ] ) == characterID : main.append( offset )
-		else : others.append( offset )
+# find the offsets for the given character
+offsets     = list( entities.loc[ entities[ 'COREF' ] == characterID ][ 'start_token' ] )
+identifiers = link( tokens, offsets )
 
-# slurp up the tokens
-tokens = pd.read_csv( tsv, sep='\t' )
-
-# link offsets to sentence identifiers; create sets of sentence identifiers
-main   = link( tokens, main )
-others = link( tokens, others )
-	
-# get all sentences regarding the given character; (falsely) assume they are all narrator sentences
-narrator = set( tokens.loc[ tokens[ 'characterId' ] == characterID ][ 'sentenceID' ] )
-
-# subtract the main character's and the other character's sentences to get true narrator sentences
-narrator = narrator.difference( main )
-narrator = narrator.difference( others )
-
-# debug
-print( "main character's sentences:", sorted( main ) )
-print( "narrator sentences:", sorted( narrator ) )
-
-# output
-saveSentences( main, SENTENCESMAIN, basename )
-saveSentences( narrator, SENTENCESNARRATOR, basename )
+# based on the identifiers, save a list of sentences
+sentences = identifiers2sentences( tokens, identifiers, ROOT, basename )
 
 # done
 exit()

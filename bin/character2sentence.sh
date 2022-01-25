@@ -12,8 +12,6 @@
 
 # configure
 CHARACTER2SENTENCE='./bin/character2sentence.py'
-EXTENSION='tsv'
-ROOT='./tokens'
 JOBS='./tmp/jobs.tsv'
 
 # sanity check
