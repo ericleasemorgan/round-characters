@@ -44,7 +44,7 @@ def link( tokens, offsets ) :
 	
 
 # given tokens and identifiers, return sentences
-def identifiers2sentences( tokens, identifiers, directory, basename ) :
+def identifiers2sentences( tokens, identifiers, directory, basename, type ) :
 
 	# initialize
 	sentences = []
@@ -70,7 +70,7 @@ def identifiers2sentences( tokens, identifiers, directory, basename ) :
 		sentences.append( sentence )
 			
 	# create file name, (re-)initialize, and output
-	file = directory + '/' + basename + '.txt'
+	file = directory + '/' + basename + '-' + type + '.txt'
 	if path.exists( file ) : remove( file )
 	with open( file, 'w' ) as handle : handle.write( '\n'.join( sentences ) )
 
@@ -80,18 +80,28 @@ def identifiers2sentences( tokens, identifiers, directory, basename ) :
 
 # initialize
 entities = ROOT + '/' + basename + '.entities'
+quotes   = ROOT + '/' + basename + '.quotes'
 tokens   = ROOT + '/' + basename + '.tokens'
 
-# slurp up the entities and tokens as data frames
+# slurp up the entities, tokens, and quotes as data frames
 entities = pd.read_csv( entities, sep='\t' )
+quotes   = pd.read_csv( quotes, sep='\t' )
 tokens   = pd.read_csv( tokens, sep='\t' )
 
-# find the offsets for the given character
-offsets     = list( entities.loc[ entities[ 'COREF' ] == characterID ][ 'start_token' ] )
-identifiers = link( tokens, offsets )
+# find the offsets of all sentences as well as the sentences spoken by the given character
+allOffsets       = list( entities.loc[ entities[ 'COREF' ] == characterID ][ 'start_token' ] )
+characterOffsets = list( quotes.loc[ quotes[ 'char_id' ] == characterID ][ 'quote_start' ] )
+
+# use the offsets to get the sentence identifiers
+allIdentifiers       = link( tokens, allOffsets )
+characterIdentifiers = link( tokens, characterOffsets )
+
+# subtract the character sentences from all the sentences to get the narrator sentences
+narratorIdentifiers = allIdentifiers - characterIdentifiers
 
 # based on the identifiers, save a list of sentences
-sentences = identifiers2sentences( tokens, identifiers, ROOT, basename )
+narratorSentences  = identifiers2sentences( tokens, sorted( narratorIdentifiers ), ROOT, basename, 'narrator' )
+characterSentences = identifiers2sentences( tokens, sorted( characterIdentifiers ), ROOT, basename, 'main' )
 
 # done
 exit()

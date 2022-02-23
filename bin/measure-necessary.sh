@@ -12,6 +12,7 @@
 SCORES='./scores'
 MEASURENECESSARY='./bin/measure-necessary.py'
 JOBS='./tmp/jobs.tsv'
+PATTERN='*.tom'
 
 # sanity check
 if [[ -z $1 ]]; then
@@ -26,14 +27,14 @@ DIRECTORY=$1
 rm -rf $JOBS
 
 # create a list of jobs
-find $DIRECTORY -name "*.txt" | while read FILE; do
+find $DIRECTORY -name "$PATTERN" | while read FILE; do
 
 	# debug
 	echo $FILE >&2
 
 	# create output file name
-	BASENAME=$(basename $FILE .txt)
-	OUTPUT="$SCORES/$BASENAME.tsv"
+	BASENAME=$(basename $FILE .tom)
+	OUTPUT="$DIRECTORY/$BASENAME.tsv"
 
 	# update the list
 	printf "$FILE\t$OUTPUT\n" >> $JOBS

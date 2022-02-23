@@ -2,4 +2,7 @@
 lib/
 tmp/
 x-*
+xx-*
+xxx-*
 __pycache__
+corpus/

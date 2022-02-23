@@ -21,22 +21,31 @@ fi
 INPUT=$1
 OUTPUT=$2
 
-# initialize
-rm -rf $JOBS
+# get the number of files to process and the resulting .html files
+FILES=($( find $INPUT -regex ".*_.*\.txt" ))
+BOOKS=($( find $OUTPUT -name "*.html" ))
 
-# get a list of all the files to process, and process each one
-FILES=($( find $INPUT -name "*.txt" ))
-for FILE in "${FILES[@]}"
-do
+# if the lists are equal, then do... nothing
+if [[ ${#FILES[@]} = ${#BOOKS[@]}  ]]; then exit
+else
+
+	# initialize
+	rm -rf $JOBS
+
+	for FILE in "${FILES[@]}"; do
    
-   # get the identifier
-   ID=$( basename $FILE '.txt' )
+	   # get the identifier
+	   ID=$( basename $FILE '.txt' )
 
-	# update the list of jobs
-	printf "$ID\t$FILE\t$OUTPUT\n" >> $JOBS
+		# update the list of jobs
+		printf "$ID\t$FILE\t$OUTPUT\n" >> $JOBS
 
-done
+	done
 
-# submit the work and done
-cat $JOBS | parallel --colsep '\t' $BOOK2BOOKNLP {1} {2} {3}
+	# submit the work and done
+	cat $JOBS | parallel --colsep '\t' $BOOK2BOOKNLP {1} {2} {3}
+
+fi
+
+# done
 exit
