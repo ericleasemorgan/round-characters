@@ -2,6 +2,12 @@
 
 # file2ent.sh - a front-ent to file2ent.py
 
+# Claudia Carroll <ccarrol3@nd.edu> and Eric Lease Morgan <emorgan@nd.edu>
+# (c) University of Notre Dame; distributed under a GNU Public License
+
+# March 10, 2022 - first documentation
+
+
 # configure
 FILE2ENT='./bin/file2ent.py'
 
@@ -20,7 +26,7 @@ FILE="$BOOK/$FILE.txt"
 
 # do the work
 echo "Extracting main character from $FILE" >&2
-CHARACTER=$( $FILE2ENT $FILE 2>/dev/null )
+CHARACTER=$( $FILE2ENT $FILE )
 echo "The most frequently mentioned character in $FILE is $CHARACTER. Saving." >&2
 
 # save for future reference

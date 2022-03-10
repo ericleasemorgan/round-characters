@@ -2,7 +2,7 @@
 
 # extract-words.sh - a front-end to extract-words.py
 
-# Eric Lease Morgan <emorgan@nd.edu>
+# Claudia Carroll <ccarrol3@nd.edu> and Eric Lease Morgan <emorgan@nd.edu>
 # (c) University of Notre Dame; distributed under a GNU Public License
 
 # February 10, 2022 - first cut

@@ -3,7 +3,7 @@
 # measure-necessary.py - give a text calculate the degree it is necessary
 # or unnecessary to interpret its sentences in order to garner it meaning
 
-# Eric Lease Morgan <emorgan@nd.edu>
+# Claudia Carroll <ccarrol3@nd.edu> and Eric Lease Morgan <emorgan@nd.edu>
 # (c) University of Notre Dame; distributed under a GNU Public License
 
 # September 23, 2021 - originally written months and months ago, but tweaked for slightly different input

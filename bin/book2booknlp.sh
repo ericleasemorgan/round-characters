@@ -2,10 +2,11 @@
 
 # book2booknlp.sh - a front-end to book2booknlp.py
 
-# Eric Lease Morgan <emorgan@nd.edu>
+# Claudia Carroll <ccarrol3@nd.edu> and Eric Lease Morgan <emorgan@nd.edu>
 # (c) University of Notre Dame; distributed under a GNU Public License
 
 # January 20, 2022 - first cut
+
 
 # configure
 BOOK2BOOKNLP='./bin/book2booknlp.py'

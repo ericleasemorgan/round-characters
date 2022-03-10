@@ -2,7 +2,7 @@
 
 # file2ent.py - given a plain text file, output a frequency list of named entities of type PERSON
 
-# Eric Lease Morgan <emorgan@nd.edu>
+# Claudia Carroll <ccarrol3@nd.edu> and Eric Lease Morgan <emorgan@nd.edu>
 # (c) University of Notre Dame; distributed under a GNU Public License
 
 # January 28, 2022 - first cut

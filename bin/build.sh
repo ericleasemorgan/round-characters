@@ -2,7 +2,7 @@
 
 # build.sh - one script to rule them all
 
-# Eric Lease Morgan <emorgan@nd.edu>
+# Claudia Carroll <ccarrol3@nd.edu> and Eric Lease Morgan <emorgan@nd.edu>
 # (c) University of Notre Dame; distributed under a GNU Public License
 
 # March 10, 2022 - first documentation

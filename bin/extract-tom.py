@@ -2,7 +2,7 @@
 
 # extract-words.py - given a JSON file and a proper name, output agent, poss, and mod words
 
-# Eric Lease Morgan <emorgan@nd.edu>
+# Claudia Carroll <ccarrol3@nd.edu> and Eric Lease Morgan <emorgan@nd.edu>
 # (c) University of Notre Dame; distributed under a GNU Public License
 
 # February 10, 2022 - first cut; based on Claudia Carrol's jq recipe

@@ -2,7 +2,7 @@
 
 # txt2chapters.pl - given a plain text file delimited by a patter, output "DIRECTORY"
 
-# Eric Lease Morgan <eric_morgan@infomotions.com>
+# Claudia Carroll <ccarrol3@nd.edu> and Eric Lease Morgan <eric_morgan@infomotions.com>
 
 # January 28, 2021 - because I couldn't sleep
 # February 6, 2021 - writing as a stand-alone program

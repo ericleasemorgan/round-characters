@@ -1,5 +1,13 @@
 #!/usr/bin/env python
 
+# book2booknlp.py - a more readable version of the root to Python BookNLP pipeline
+# see: https://github.com/booknlp/booknlp
+
+# Claudia Carroll <ccarrol3@nd.edu> and Eric Lease Morgan <emorgan@nd.edu>
+# (c) University of Notre Dame; distributed under a GNU Public License
+
+# March 10, 2022 - first documentation
+
 
 # configure
 PARAMETERS = { "pipeline":"entity,quote,supersense,event,coref", "model":"small" }
