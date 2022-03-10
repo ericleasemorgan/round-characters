@@ -2,15 +2,44 @@
 
 # build.sh - one script to rule them all
 
+# Eric Lease Morgan <emorgan@nd.edu>
+# (c) University of Notre Dame; distributed under a GNU Public License
+
+# March 10, 2022 - first documentation
+
+
 # configure
 CORPUS='corpus'
 BOOK2BOOKNLP='./bin/book2booknlp.sh'
-FILE2ENT='./bin/file2ent.py'
-EXTRACTWORDS='./bin/extract-words.sh'
+FILE2ENT='./bin/file2ent.sh'
+EXTRACTTOM='./bin/extract-tom.sh'
 MEASURENECESSARY='./bin/measure-necessary.py'
+TMP='./tmp'
+JOBS='./tmp/jobs.tsv'
 
-# process each book in the corpus
+# make sane
+rm -rf $TMP
+mkdir $TMP
+
+# create a list of all books to process
 BOOKS=($( find $CORPUS/ -type d -not -name "." -not -name $CORPUS ))
+
+# for each book, create a list of character extraction jobs to process
+for BOOK in "${BOOKS[@]}"; do
+	
+	# denote character file
+	FILE=$( basename $BOOK )
+	FILE="$BOOK/$FILE.chr"
+	
+	# update the list of jobs, conditionally
+	if [[ ! -f $FILE ]]; then echo $BOOK >> $JOBS; fi
+	
+done
+
+# submit the work, conditionally
+if [[ -f $JOBS ]]; then cat $JOBS | parallel $FILE2ENT; fi
+
+# loop through the again doing the balance of the work
 for BOOK in "${BOOKS[@]}"; do
 
 	# debug
@@ -47,13 +76,13 @@ for BOOK in "${BOOKS[@]}"; do
 	
 	# extract agent, pos, and mods words
 	echo "  Extracting agent, pos, and mods words associated with $CHARACTER." >&2
-	$EXTRACTWORDS $BOOK $CHARACTER $BOOK
+	$EXTRACTTOM $BOOK $CHARACTER $BOOK
 	
 	# measure necessary/unnecessary
 	echo "  Measuring necessary/unnecessary" >&2
 	FILE=$( basename $BOOK )
 	FILE="$BOOK/$FILE.tsv"
-	$MEASURENECESSARY $BOOK > $FILE
+	if [[ ! -f $FILE ]]; then $MEASURENECESSARY $BOOK > $FILE; fi
 	
 	# delimit
 	echo

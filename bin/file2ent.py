@@ -48,9 +48,10 @@ for entity in doc.ents :
 		if token not in persons : persons[ token ] =  1
 		else                    : persons[ token ] += 1
 
-# sort the list of persons by frequency, output, and done
+# sort the list of persons by frequency
 persons = sorted( persons.items(), key=lambda x:x[ 1 ], reverse=True )
-for person, count in persons : print( '\t'.join( [ person, str( count ) ] ) )
-exit()
 
+# parse out the most frequently mentioned person and done
+print( persons[ 0 ][ 0 ] )
+exit
 	
