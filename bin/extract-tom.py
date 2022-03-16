@@ -8,11 +8,12 @@
 # February 10, 2022 - first cut; based on Claudia Carrol's jq recipe
 # March     2, 2022 - now extracting speeches (quotes) too
 # March    10, 2022 - touching output files
+# March    16, 2022 - matching on mention_phrase as opposed to char_id
 
 
 # configure
 TOM      = '.tom'
-SPEACHES = '.speeches'
+SPEECHES = '.speeches'
 QUOTES   = '.quotes'
 
 # require
@@ -35,12 +36,11 @@ with open( file ) as handle : records = json.load( handle )
 
 # touch (bring into existence) the theory of mind file
 basename = os.path.basename( os.path.splitext( file )[ 0 ] )
-file     = directory + '/' + basename + TOM
-Path( file ).touch()
+Path( directory + '/' + basename + TOM ).touch()
 
 # similarly, touch the speaches file
-file = directory + '/' + basename + SPEACHES
-Path( file ).touch()
+basename = os.path.basename( os.path.splitext( file )[ 0 ] )
+Path( directory + '/' + basename + SPEECHES ).touch()
 
 # process each character
 characters = records[ 'characters' ]
@@ -72,12 +72,9 @@ for character in characters :
 			# slurp up the corresponding quotes file; should probably check for existance
 			file = directory + '/' + basename + QUOTES
 			quotes = pd.read_csv( file, sep='\t' )
-			
-			# get the character's identifier (key)
-			identifier = proper[ 'c' ]
-
+									
 			# extract the quotes spoken by the given character
-			quotes = quotes.loc[quotes['char_id'] == identifier ]
+			quotes = quotes.loc[ quotes[ 'mention_phrase' ] == name ]
 			quotes = list( quotes[ 'quote' ] )
 			
 			# create a string of quotes -- speeches
@@ -85,7 +82,7 @@ for character in characters :
 			for quote in quotes : speaches = speaches + quote
 			
 			# save the speeches for future reference
-			file = directory + '/' + basename + SPEACHES
+			file = directory + '/' + basename + SPEECHES
 			with open( file, 'w' ) as handle : handle.write( speaches )
 
 			# done
